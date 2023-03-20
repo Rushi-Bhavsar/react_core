@@ -137,8 +137,10 @@ MyComponent.defaultProps = {
 * State variable are mutable.
 * React re-renders the **state variable** on any change(Event-handler, Value change)
 * To change the value of **state variable** we need to use setValue method.
-* In case of Function base component we need to use **useState** hooks.
-* In case of class base component we need to use **this.setValue** method.
+* In case of Function base component we need to use **useState** hooks to set the initial value and setValue to 
+change the value.
+* In case of class base component first we need to initialize the state variable using the constructor,
+then we need to use **this.setValue** method to change the value.
 
 ```jsx
 import React, {useState} from "react";
