@@ -165,3 +165,36 @@ MyComponent.propTypes = {
     last_name: PropTypes.string,
 }
 ```
+
+### Day-3
+* Using Styles in function based component.
+* There 2 most common ways to apply CSS to a component **inline and normal CSS.**
+* There are different ways also like **node-sass, Styled Components** installing some CSS package using npm.
+```jsx
+
+import React from "react";
+import PropTypes from "prop-types";
+import {black} from "colorette";
+
+const MyComponent = (props) => {
+    // First create a style object.
+    myStyles = {
+        color: 'red',
+        backgroundColor: 'black'
+    }
+    return (
+        <>
+            {/*Apply the style object in JSX format to HTML element style attribute.*/}
+            <p style={myStyles}>Hello message from {props.first_name} {props.last_name}.</p>
+            <p>Condition: {value}</p>
+        </>
+    );
+};
+export default MyComponent;
+
+MyComponent.propTypes = {
+    value: PropTypes.string,
+    first_name: PropTypes.string,
+    last_name: PropTypes.string,
+}
+```

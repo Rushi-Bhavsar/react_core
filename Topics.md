@@ -5,4 +5,4 @@
 4. What is React component.
 5. What is PROPS, PROPS-Type and Default PROPS.
 6. What is State.
-7. 
+7. Style to a React Function component.
